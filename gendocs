@@ -1,0 +1,14 @@
+#!/bin/bash
+./bin/apigen.phar generate -s . --exclude "doc*" -d ./doc/ --template-theme=bootstrap --todo --access-levels="public,protected,private"
+
+patch -u doc/resources/style.css << EOF
+--- style.css	2015-11-13 10:50:44.750185862 -0600
++++ style.new.css	2015-11-13 11:05:28.866167821 -0600
+@@ -220,7 +220,6 @@
+ }
+ 
+ #rightInner {
+-	max-width: 1000px;
+ 	min-width: 350px;
+ }
+EOF

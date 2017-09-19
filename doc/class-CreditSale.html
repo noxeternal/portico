@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class CreditSale</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">Overview</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+<span>Package</span>					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Packages</h3>
+			<ul>
+					<li>
+						<a href="package-porticoAPI.html">
+							porticoAPI						</a>
+							</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-BatchClose.html">BatchClose</a></li>
+				<li><a href="class-BatchCloseResponse.html">BatchCloseResponse</a></li>
+				<li><a href="class-CreditAddToBatch.html">CreditAddToBatch</a></li>
+				<li><a href="class-CreditAddToBatchResponse.html">CreditAddToBatchResponse</a></li>
+				<li><a href="class-CreditAuth.html">CreditAuth</a></li>
+				<li><a href="class-CreditAuthResponse.html">CreditAuthResponse</a></li>
+				<li><a href="class-CreditReturn.html">CreditReturn</a></li>
+				<li><a href="class-CreditReturnResponse.html">CreditReturnResponse</a></li>
+				<li class="active"><a href="class-CreditSale.html">CreditSale</a></li>
+				<li><a href="class-CreditSaleResponse.html">CreditSaleResponse</a></li>
+				<li><a href="class-CreditVoid.html">CreditVoid</a></li>
+				<li><a href="class-CreditVoidResponse.html">CreditVoidResponse</a></li>
+				<li><a href="class-FailureResponse.html">FailureResponse</a></li>
+				<li><a href="class-portico.html">portico</a></li>
+				<li><a href="class-porticoResponse.html">porticoResponse</a></li>
+				<li><a href="class-ReportBatchDetail.html">ReportBatchDetail</a></li>
+				<li><a href="class-ReportBatchDetailResponse.html">ReportBatchDetailResponse</a></li>
+				<li><a href="class-ReportBatchHistory.html">ReportBatchHistory</a></li>
+				<li><a href="class-ReportBatchHistoryResponse.html">ReportBatchHistoryResponse</a></li>
+				<li><a href="class-ReportBatchSummary.html">ReportBatchSummary</a></li>
+				<li><a href="class-ReportBatchSummaryResponse.html">ReportBatchSummaryResponse</a></li>
+				<li><a href="class-ReportTxnDetail.html">ReportTxnDetail</a></li>
+				<li><a href="class-ReportTxnDetailResponse.html">ReportTxnDetailResponse</a></li>
+			</ul>
+
+
+
+
+
+			<h3>Functions</h3>
+			<ul>
+				<li><a href="function-porticoAutoload.html">porticoAutoload</a></li>
+				<li><a href="function-porticoAutoloadFail.html">porticoAutoloadFail</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class CreditSale</h1>
+
+
+	<div class="description">
+	<p>CreditSale extends portico for Credit Card transactions, both Manual Entry and Swiped</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-portico.html"><span>portico</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>CreditSale</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		
+		<b>Package:</b> <a href="package-porticoAPI.html">porticoAPI</a><br>
+
+				<b>Copyright:</b>
+				2015 Michael Rice<br>
+				<b>License:</b>
+				<a href="http://www.gnu.org/licenses/">GNU Lesser Public License (LGPL)</a><br>
+				<b>Author:</b>
+				Michael Rice <a href="&#x6d;&#x61;&#105;&#108;&#x74;&#x6f;&#x3a;&#114;&#105;&#x63;&#x65;&#x2e;&#109;&#105;&#x63;&#x68;&#x61;&#101;&#108;&#x74;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#x6d;">&#114;&#105;&#x63;&#x65;&#x2e;&#109;&#105;&#x63;&#x68;&#x61;&#101;&#108;&#x74;&#x40;&#x67;&#109;&#97;&#x69;&#x6c;&#x2e;&#99;&#111;&#x6d;</a><br>
+			<b>Located at</b> <a href="source-class-CreditSale.html#29-356" title="Go to source code">CreditSale.class.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="doTransaction" id="_doTransaction">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-CreditSaleResponse.html">CreditSaleResponse</a></code>|<code><a href="class-FailureResponse.html">FailureResponse</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_doTransaction">#</a>
+			<code><a href="source-class-CreditSale.html#191-212" title="Go to source code">doTransaction</a>( <span> <var>$swipe</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Builds CreditSale request and submit it to portico::Transaction</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Builds CreditSale request and submit it to portico::Transaction</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-CreditSaleResponse.html">CreditSaleResponse</a></code>|<code><a href="class-FailureResponse.html">FailureResponse</a></code><br>formatted response from Heartland SOAP interface
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="buildBlock1" id="_buildBlock1">
+
+			<td class="attributes"><code>
+				 private 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_buildBlock1">#</a>
+			<code><a href="source-class-CreditSale.html#215-235" title="Go to source code">buildBlock1</a>( )</code>
+
+			<div class="description short">
+				<p>Sets values for the 'Block1' array and returns the array</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets values for the 'Block1' array and returns the array</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="buildCardData" id="_buildCardData">
+
+			<td class="attributes"><code>
+				 private 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_buildCardData">#</a>
+			<code><a href="source-class-CreditSale.html#238-273" title="Go to source code">buildCardData</a>( )</code>
+
+			<div class="description short">
+				<p>Sets values for the 'CardData' array (and potentially 'CardHolderData' array) and returns the array</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets values for the 'CardData' array (and potentially 'CardHolderData' array) and returns the array</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+					<h4>Uses</h4>
+					<div class="list">
+							portico::swipe<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="validate" id="_validate">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_validate">#</a>
+			<code><a href="source-class-CreditSale.html#276-331" title="Go to source code">validate</a>( )</code>
+
+			<div class="description short">
+				<p>Validates CreditSale object before attempting transaction</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Validates CreditSale object before attempting transaction</p>
+
+
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						Exception<br>on invalid data
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="checkFailure" id="_checkFailure">
+
+			<td class="attributes"><code>
+				 protected 
+				object|boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_checkFailure">#</a>
+			<code><a href="source-class-CreditSale.html#334-355" title="Go to source code">checkFailure</a>( <span>object <var>$response</var></span> )</code>
+
+			<div class="description short">
+				<p>Child class specific function to check for Transaction failures</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Child class specific function to check for Transaction failures</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$response</var></dt>
+						<dd>Raw Heartland Portico Gateway response</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						object|boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-portico.html#methods">portico</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-portico.html#_Transaction">Transaction()</a></code>, 
+				<code><a href="class-portico.html#___construct">__construct()</a></code>, 
+				<code><a href="class-portico.html#_initRequest">initRequest()</a></code>, 
+				<code><a href="class-portico.html#_setGateway">setGateway()</a></code>, 
+				<code><a href="class-portico.html#_setTransaction">setTransaction()</a></code>, 
+				<code><a href="class-portico.html#_validateFields">validateFields()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Constants summary</h2></div>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Constants inherited from <a href="class-portico.html#constants">portico</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-portico.html#DEBUG"><b>DEBUG</b></a></code>, 
+				<code><a href="class-portico.html#GATEWAY"><b>GATEWAY</b></a></code>
+			</p>
+		</div>
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="swipe" id="$swipe">
+			<td class="attributes"><code>
+				protected  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#36-41" title="Go to source code"><var>$swipe</var></a>
+
+				<div class="description short">
+					<p>Swipe is set to true if using TrackData from MSR card read and set to false if using Manually Entered card data.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Swipe is set to true if using TrackData from MSR card read and set to false if using Manually Entered card data.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$swipe" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="required" id="$required">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#42-78" title="Go to source code"><var>$required</var></a>
+
+				<div class="description short">
+					<p>Array of required properties.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of required properties.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$required" class="anchor">#</a>
+					<code>[
+    <span class="php-quote">'CreditSale'</span> =&gt; [
+        <span class="php-quote">'Amt'</span>,
+        <span class="php-quote">'AllowDup'</span>,
+        <span class="php-quote">'AllowPartialAuth'</span>,
+        <span class="php-comment">// 'Version',</span>
+        <span class="php-quote">'ClientTxnId'</span>,
+        <span class="php-quote">'DirectMktInvoiceNbr'</span>,
+        <span class="php-quote">'DirectMktShipDay'</span>,
+        <span class="php-quote">'DirectMktShipMonth'</span>,
+        <span class="php-quote">'CardNbr'</span>,
+        <span class="php-quote">'ExpMonth'</span>,
+        <span class="php-quote">'ExpYear'</span>,
+        <span class="php-quote">'CardPresent'</span>,
+        <span class="php-quote">'ReaderPresent'</span>,
+        <span class="php-quote">'CVV2'</span>,
+        <span class="php-quote">'CardHolderFirstName'</span>,
+        <span class="php-quote">'CardHolderLastName'</span>,
+        <span class="php-quote">'CardHolderZip'</span>
+    ],
+    <span class="php-quote">'CreditSaleSwipe'</span> =&gt; [
+        <span class="php-quote">'Amt'</span>,
+        <span class="php-quote">'AllowDup'</span>,
+        <span class="php-quote">'AllowPartialAuth'</span>,
+        <span class="php-comment">// 'Version',</span>
+        <span class="php-quote">'ClientTxnId'</span>,
+        <span class="php-quote">'DirectMktInvoiceNbr'</span>,
+        <span class="php-quote">'DirectMktShipDay'</span>,
+        <span class="php-quote">'DirectMktShipMonth'</span>,
+        <span class="php-quote">'TrackData'</span>
+    ]
+]</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="Amt" id="$Amt">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#79-84" title="Go to source code"><var>$Amt</var></a>
+
+				<div class="description short">
+					<p>Amount requested for authorization</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Amount requested for authorization</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$Amt" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="AllowDup" id="$AllowDup">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#85-91" title="Go to source code"><var>$AllowDup</var></a>
+
+				<div class="description short">
+					<p>Important in cases where the client processes a large number of similar transactions in
+a very short period of time; sending "Y" will skip duplicate checking on this transaction</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Important in cases where the client processes a large number of similar transactions in
+a very short period of time; sending "Y" will skip duplicate checking on this transaction</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$AllowDup" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="AllowPartialAuth" id="$AllowPartialAuth">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#92-97" title="Go to source code"><var>$AllowPartialAuth</var></a>
+
+				<div class="description short">
+					<p>Indicates whether or not a partial authorization is supported by terminal</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Indicates whether or not a partial authorization is supported by terminal</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$AllowPartialAuth" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="Version" id="$Version">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#98-103" title="Go to source code"><var>$Version</var></a>
+
+				<div class="description short">
+					<p>The encryption version used on the supplied data</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The encryption version used on the supplied data</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$Version" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="ClientTxnId" id="$ClientTxnId">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#104-109" title="Go to source code"><var>$ClientTxnId</var></a>
+
+				<div class="description short">
+					<p>Client generated transaction identifier sent in the request of the original transaction</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Client generated transaction identifier sent in the request of the original transaction</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$ClientTxnId" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="DirectMktInvoiceNbr" id="$DirectMktInvoiceNbr">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#110-115" title="Go to source code"><var>$DirectMktInvoiceNbr</var></a>
+
+				<div class="description short">
+					<p>Invoice Number</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Invoice Number</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$DirectMktInvoiceNbr" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="DirectMktShipDay" id="$DirectMktShipDay">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#116-121" title="Go to source code"><var>$DirectMktShipDay</var></a>
+
+				<div class="description short">
+					<p>Ship Day</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Ship Day</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$DirectMktShipDay" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="DirectMktShipMonth" id="$DirectMktShipMonth">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#122-127" title="Go to source code"><var>$DirectMktShipMonth</var></a>
+
+				<div class="description short">
+					<p>Ship Month</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Ship Month</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$DirectMktShipMonth" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="CardNbr" id="$CardNbr">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#128-133" title="Go to source code"><var>$CardNbr</var></a>
+
+				<div class="description short">
+					<p>Card number; also referred to as Primary Account Number (PAN)</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Card number; also referred to as Primary Account Number (PAN)</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$CardNbr" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="ExpMonth" id="$ExpMonth">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#134-139" title="Go to source code"><var>$ExpMonth</var></a>
+
+				<div class="description short">
+					<p>Card expiration month</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Card expiration month</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$ExpMonth" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="ExpYear" id="$ExpYear">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#140-145" title="Go to source code"><var>$ExpYear</var></a>
+
+				<div class="description short">
+					<p>Card expiration year</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Card expiration year</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$ExpYear" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="CardPresent" id="$CardPresent">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#146-151" title="Go to source code"><var>$CardPresent</var></a>
+
+				<div class="description short">
+					<p>Indicates whether or not the card was present at the time of the transaction</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Indicates whether or not the card was present at the time of the transaction</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$CardPresent" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="ReaderPresent" id="$ReaderPresent">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#152-157" title="Go to source code"><var>$ReaderPresent</var></a>
+
+				<div class="description short">
+					<p>Indicates whether or not a reader was present at the time of the transaction</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Indicates whether or not a reader was present at the time of the transaction</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$ReaderPresent" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="CVV2" id="$CVV2">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#158-163" title="Go to source code"><var>$CVV2</var></a>
+
+				<div class="description short">
+					<p>CVV Number ("Card Verification Value"); 3 digits on VISA, MasterCard and Discover and 4 on American Express</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>CVV Number ("Card Verification Value"); 3 digits on VISA, MasterCard and Discover and 4 on American Express</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$CVV2" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="CardHolderFirstName" id="$CardHolderFirstName">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#164-169" title="Go to source code"><var>$CardHolderFirstName</var></a>
+
+				<div class="description short">
+					<p>Cardholder First Name</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Cardholder First Name</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$CardHolderFirstName" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="CardHolderLastName" id="$CardHolderLastName">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#170-175" title="Go to source code"><var>$CardHolderLastName</var></a>
+
+				<div class="description short">
+					<p>Cardholder Last Name</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Cardholder Last Name</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$CardHolderLastName" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="CardHolderZip" id="$CardHolderZip">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#176-181" title="Go to source code"><var>$CardHolderZip</var></a>
+
+				<div class="description short">
+					<p>Cardholder Billing Zip Code</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Cardholder Billing Zip Code</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$CardHolderZip" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="TrackData" id="$TrackData">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-CreditSale.html#182-187" title="Go to source code"><var>$TrackData</var></a>
+
+				<div class="description short">
+					<p>Full magnetic stripe data</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Full magnetic stripe data</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$TrackData" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-portico.html#properties">portico</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-portico.html#$DeveloperId"><var>$DeveloperId</var></a></code>, 
+				<code><a href="class-portico.html#$DeviceId"><var>$DeviceId</var></a></code>, 
+				<code><a href="class-portico.html#$GATEWAY"><var>$GATEWAY</var></a></code>, 
+				<code><a href="class-portico.html#$LicenseId"><var>$LicenseId</var></a></code>, 
+				<code><a href="class-portico.html#$Password"><var>$Password</var></a></code>, 
+				<code><a href="class-portico.html#$SiteId"><var>$SiteId</var></a></code>, 
+				<code><a href="class-portico.html#$UserName"><var>$UserName</var></a></code>, 
+				<code><a href="class-portico.html#$VersionNbr"><var>$VersionNbr</var></a></code>, 
+				<code><a href="class-portico.html#$class"><var>$class</var></a></code>, 
+				<code><a href="class-portico.html#$request"><var>$request</var></a></code>, 
+				<code><a href="class-portico.html#$requiredCommon"><var>$requiredCommon</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		 API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
