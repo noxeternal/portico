@@ -2,6 +2,9 @@
   "name": "noxeternal/portico",
   "version": "v1.0.0",
   "autoload": {
-    "classmap": ["./"]
-  }
+    "classmap": [
+      "./"
+    ]
+  },
+  "license": "MIT"
 }
