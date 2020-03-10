@@ -1,20 +1,16 @@
 {
   "name": "noxeternal/portico",
-  "version": "v1.0.0",
+  "version": "0.0.1",
   "autoload": {
     "classmap": [
       "./"
     ]
   },
   "license": "MIT",
-  "type": "library",
-  "homepage": "https://github.com/noxeternal",
   "authors": [
     {
       "name": "Michael Rice",
-      "email": "rice.michaelt@gmail.com",
-      "homepage": "https://noxeternal.net",
-      "role": "Developer"
+      "email": "rice.michaelt@gmail.com"
     }
   ]
 }
