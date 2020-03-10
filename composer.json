@@ -7,5 +7,14 @@
     ]
   },
   "license": "MIT",
-  "type": "library"
+  "type": "library",
+  "homepage": "https://github.com/noxeternal",
+  "authors": [
+    {
+      "name": "Michael Rice",
+      "email": "rice.michaelt@gmail.com",
+      "homepage": "https://noxeternal.net",
+      "role": "Developer"
+    }
+  ]
 }
